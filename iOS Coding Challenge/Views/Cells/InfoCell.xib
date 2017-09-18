@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="info_cell_id" id="7gZ-aN-ffb" customClass="InfoCell" customModule="iOS_Coding_Challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7gZ-aN-ffb" id="PlX-DC-AcD">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB1-AN-NkG">
+                        <rect key="frame" x="16" y="11.5" width="179.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0x-k0-WcG">
+                        <rect key="frame" x="199.5" y="12" width="165.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o0x-k0-WcG" firstAttribute="top" secondItem="PlX-DC-AcD" secondAttribute="top" constant="12" id="D0y-Yi-CMC"/>
+                    <constraint firstAttribute="trailing" secondItem="o0x-k0-WcG" secondAttribute="trailing" constant="10" id="Fbk-M0-1aQ"/>
+                    <constraint firstItem="o0x-k0-WcG" firstAttribute="leading" secondItem="TB1-AN-NkG" secondAttribute="trailing" constant="4" id="Oxh-lk-D9V"/>
+                    <constraint firstItem="TB1-AN-NkG" firstAttribute="width" secondItem="PlX-DC-AcD" secondAttribute="width" multiplier="1 / 2" constant="-8" id="XMa-KE-WAd"/>
+                    <constraint firstItem="TB1-AN-NkG" firstAttribute="centerY" secondItem="o0x-k0-WcG" secondAttribute="centerY" id="arC-25-U1t"/>
+                    <constraint firstAttribute="bottom" secondItem="o0x-k0-WcG" secondAttribute="bottom" constant="10.5" id="lY7-K8-BkF"/>
+                    <constraint firstItem="TB1-AN-NkG" firstAttribute="leading" secondItem="PlX-DC-AcD" secondAttribute="leading" constant="16" id="tdB-pW-v3M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fieldLabel" destination="TB1-AN-NkG" id="kah-5c-Wvq"/>
+                <outlet property="valueLabel" destination="o0x-k0-WcG" id="h3s-sA-4Tl"/>
+            </connections>
+            <point key="canvasLocation" x="-78" y="129"/>
+        </tableViewCell>
+    </objects>
+</document>
